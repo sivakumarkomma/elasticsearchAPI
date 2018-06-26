@@ -1,5 +1,6 @@
-package com.elasticsearch;
+package com.elasticsearch.crud;
 
+import com.elasticsearch.EsConnection;
 import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;

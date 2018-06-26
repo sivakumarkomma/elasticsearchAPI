@@ -1,5 +1,6 @@
-package com.elasticsearch;
+package com.elasticsearch.crud;
 
+import com.elasticsearch.EsConnection;
 import java.io.IOException;
 import org.elasticsearch.action.get.GetRequest;
 import org.elasticsearch.action.get.GetResponse;
