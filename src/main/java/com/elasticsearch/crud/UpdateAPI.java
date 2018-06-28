@@ -2,23 +2,23 @@ package com.elasticsearch.crud;
 
 import com.elasticsearch.EsConnection;
 import java.io.IOException;
-import org.elasticsearch.action.get.GetRequest;
-import org.elasticsearch.action.get.GetResponse;
+import org.elasticsearch.action.update.UpdateRequest;
+import org.elasticsearch.action.update.UpdateResponse;
 import org.elasticsearch.client.RestHighLevelClient;
 
-public class EsGetAPI {
+public class UpdateAPI {
 
   public static void main(String args[]) throws IOException {
 
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
 
-    GetRequest getRequest = new GetRequest(
+    UpdateRequest request = new UpdateRequest(
         "twitter",
         "doc",
         "1");
-    GetResponse getResponse = highLevelClient.get(getRequest);
-    System.out.println("getResponse    "+getResponse);
-    System.out.println("indexResponse  "+getResponse.getId());
+    UpdateResponse updateResponse = highLevelClient.update(request);
+    System.out.println("updateResponse    "+updateResponse);
+    System.out.println("updateResponse  "+updateResponse.getId());
     EsConnection.closeClient(highLevelClient);
   }
 }

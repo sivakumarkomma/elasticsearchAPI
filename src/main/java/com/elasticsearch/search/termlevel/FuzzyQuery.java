@@ -14,7 +14,7 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 public class FuzzyQuery {
   public static void main(String[] args) throws IOException {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
-    SearchRequest searchRequest = new SearchRequest("datarepositorysi");
+    SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     searchSourceBuilder.query(QueryBuilders.fuzzyQuery("name","Ac"));
     searchRequest.source(searchSourceBuilder);

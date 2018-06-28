@@ -12,7 +12,7 @@ public class RangeQuery {
 
   public static void main(String[] args) throws IOException{
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
-    SearchRequest searchRequest = new SearchRequest("datarepositorysi");
+    SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     searchSourceBuilder.query(QueryBuilders.rangeQuery("sa_fileSize").lte("5000"));
     searchRequest.source(searchSourceBuilder);
@@ -23,7 +23,7 @@ public class RangeQuery {
   }
 
   private static void dateRange(RestHighLevelClient highLevelClient) throws IOException{
-    SearchRequest searchRequest = new SearchRequest("datarepositorysi");
+    SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     searchSourceBuilder.query(QueryBuilders.rangeQuery("sa_date_creation").gt("2015-09-08T18:28:26Z").lt("2015-10-08T18:28:26Z"));
     searchRequest.source(searchSourceBuilder);

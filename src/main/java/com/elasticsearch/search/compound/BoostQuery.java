@@ -15,7 +15,7 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 public class BoostQuery {
   public static void main(String[] args) throws IOException {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
-    SearchRequest searchRequest = new SearchRequest("datarepositorysi");
+    SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     searchSourceBuilder.query(QueryBuilders.boostingQuery(QueryBuilders.matchQuery("sa_indexID", "98"),
         QueryBuilders.matchQuery("sa_MetaData", "test"))

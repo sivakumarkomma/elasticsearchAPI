@@ -9,7 +9,7 @@ import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.RestHighLevelClient;
 
-public class EsIndexAPI {
+public class IndexAPI {
 
   public static void main(String args[]) throws IOException {
 

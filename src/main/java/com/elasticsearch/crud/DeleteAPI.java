@@ -6,7 +6,7 @@ import org.elasticsearch.action.delete.DeleteRequest;
 import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.client.RestHighLevelClient;
 
-public class EsDeleteAPI {
+public class DeleteAPI {
 
   public static void main(String args[]) throws IOException {
 

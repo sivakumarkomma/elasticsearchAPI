@@ -14,7 +14,7 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 public class RegexpQuery {
   public static void main(String[] args) throws IOException {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
-    SearchRequest searchRequest = new SearchRequest("datarepositorysi");
+    SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     searchSourceBuilder.query(QueryBuilders.regexpQuery("name","p.*exe"));
     searchRequest.source(searchSourceBuilder);

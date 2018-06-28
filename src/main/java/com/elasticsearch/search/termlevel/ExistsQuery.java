@@ -16,7 +16,7 @@ public class ExistsQuery {
 
   public static void main(String[] args) throws IOException {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
-    SearchRequest searchRequest = new SearchRequest("datarepositorysi");
+    SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     searchSourceBuilder.query(QueryBuilders.existsQuery("sa_MetaData"));
     searchRequest.source(searchSourceBuilder);
@@ -27,7 +27,7 @@ public class ExistsQuery {
   }
 
   private static void matchNot(RestHighLevelClient highLevelClient) throws IOException {
-    SearchRequest searchRequest = new SearchRequest("datarepositorysi");
+    SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     QueryBuilder query = QueryBuilders.boolQuery()
         .mustNot(QueryBuilders.existsQuery("sa_MetaData"));

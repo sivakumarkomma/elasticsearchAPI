@@ -14,7 +14,7 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 public class IdsQuery {
   public static void main(String[] args) throws IOException {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
-    SearchRequest searchRequest = new SearchRequest("datarepositorysi");
+    SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     searchSourceBuilder.query(QueryBuilders.idsQuery("document").addIds("192.168.87.199-mina-paperkey.exe"));
     searchRequest.source(searchSourceBuilder);
