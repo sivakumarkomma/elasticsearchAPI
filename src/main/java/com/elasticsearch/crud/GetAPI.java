@@ -17,8 +17,8 @@ public class GetAPI {
         "doc",
         "1");
     GetResponse getResponse = highLevelClient.get(getRequest);
-    System.out.println("getResponse    "+getResponse);
-    System.out.println("indexResponse  "+getResponse.getId());
+    System.out.println("getResponse    " + getResponse);
+    System.out.println("indexResponse  " + getResponse.getId());
     EsConnection.closeClient(highLevelClient);
   }
 }

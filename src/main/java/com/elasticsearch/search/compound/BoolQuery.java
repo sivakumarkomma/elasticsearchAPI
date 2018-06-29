@@ -18,13 +18,13 @@ public class BoolQuery {
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     searchSourceBuilder.query(QueryBuilders.boolQuery()
         .must(QueryBuilders.matchQuery("sa_indexID", "98"))
-        .must(QueryBuilders.matchPhrasePrefixQuery("name","act"))
-        .must(QueryBuilders.matchQuery("sa_fileSize","3210"))
+        .must(QueryBuilders.matchPhrasePrefixQuery("name", "act"))
+        .must(QueryBuilders.matchQuery("sa_fileSize", "3210"))
     );
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse.getHits().getTotalHits());
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
   }
 }

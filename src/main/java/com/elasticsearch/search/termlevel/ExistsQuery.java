@@ -21,7 +21,7 @@ public class ExistsQuery {
     searchSourceBuilder.query(QueryBuilders.existsQuery("sa_MetaData"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse.getHits().getTotalHits());
+    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
     matchNot(highLevelClient);
     EsConnection.closeClient(highLevelClient);
   }
@@ -34,7 +34,7 @@ public class ExistsQuery {
     searchSourceBuilder.query(query);
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse.getHits().getTotalHits());
+    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
     EsConnection.closeClient(highLevelClient);
   }
 }

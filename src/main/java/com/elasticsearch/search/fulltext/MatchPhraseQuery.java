@@ -15,10 +15,10 @@ public class MatchPhraseQuery {
     SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
     searchSourceBuilder.query(QueryBuilders.matchPhraseQuery("field", "foo"));
-   // searchSourceBuilder.query(QueryBuilders.matchPhraseQuery("field", "foo").analyzer("my_analyzer"));
+    // searchSourceBuilder.query(QueryBuilders.matchPhraseQuery("field", "foo").analyzer("my_analyzer"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
   }
 }

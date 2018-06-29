@@ -5,7 +5,6 @@ import java.io.IOException;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.common.lucene.search.function.FunctionScoreQuery.ScoreMode;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
 
@@ -22,8 +21,8 @@ public class BoostQuery {
     );
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse.getHits().getTotalHits());
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
   }
 }

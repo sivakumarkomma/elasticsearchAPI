@@ -14,10 +14,10 @@ public class DeleteIndex {
 
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
 
-    try{
+    try {
       DeleteIndexRequest request = new DeleteIndexRequest(INDEX_NAME);
       DeleteIndexResponse deleteIndexResponse = highLevelClient.indices().delete(request);
-    }catch(ElasticsearchStatusException ese) {
+    } catch (ElasticsearchStatusException ese) {
       ese.getMessage();
     } finally {
       EsConnection.closeClient(highLevelClient);

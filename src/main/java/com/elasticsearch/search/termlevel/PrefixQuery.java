@@ -17,10 +17,10 @@ public class PrefixQuery {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
     SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-    searchSourceBuilder.query(QueryBuilders.prefixQuery("id","192"));
+    searchSourceBuilder.query(QueryBuilders.prefixQuery("id", "192"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse.getHits().getTotalHits());
+    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
     EsConnection.closeClient(highLevelClient);
   }
 }

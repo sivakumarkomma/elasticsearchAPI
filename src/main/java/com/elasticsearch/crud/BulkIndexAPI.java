@@ -29,12 +29,12 @@ public class BulkIndexAPI {
     BulkRequest request = new BulkRequest();
     Arrays.asList(array).forEach(documentDto ->
     {
-      try{
+      try {
         String jsonString = objectMapper.writeValueAsString(documentDto);
-        System.out.println("jsonString" +jsonString);
+        System.out.println("jsonString" + jsonString);
         request.add(new IndexRequest(INDEX_NAME, TYPE, preparePathBasedID(documentDto.getId()))
-            .source(jsonString,XContentType.JSON));
-      } catch(JsonProcessingException e){
+            .source(jsonString, XContentType.JSON));
+      } catch (JsonProcessingException e) {
         e.printStackTrace();
       }
 

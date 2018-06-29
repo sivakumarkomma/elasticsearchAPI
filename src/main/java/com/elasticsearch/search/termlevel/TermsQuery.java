@@ -14,10 +14,10 @@ public class TermsQuery {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
     SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-    searchSourceBuilder.query(QueryBuilders.termsQuery("field","this", "is" , "high"));
+    searchSourceBuilder.query(QueryBuilders.termsQuery("field", "this", "is", "high"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
   }
 }

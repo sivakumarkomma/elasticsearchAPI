@@ -16,11 +16,11 @@ public class FuzzyQuery {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
     SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-    searchSourceBuilder.query(QueryBuilders.fuzzyQuery("name","Ac"));
+    searchSourceBuilder.query(QueryBuilders.fuzzyQuery("name", "Ac"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse);
-    System.out.println("searchResponse  "+searchResponse.getHits().getTotalHits());
+    System.out.println("searchResponse  " + searchResponse);
+    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
     EsConnection.closeClient(highLevelClient);
   }
 }

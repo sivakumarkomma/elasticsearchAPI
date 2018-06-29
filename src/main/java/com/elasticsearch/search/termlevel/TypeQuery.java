@@ -19,8 +19,8 @@ public class TypeQuery {
     searchSourceBuilder.query(QueryBuilders.typeQuery("document"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse.getHits().getTotalHits());
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
   }
 }

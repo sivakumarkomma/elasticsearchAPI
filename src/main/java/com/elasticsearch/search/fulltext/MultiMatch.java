@@ -18,7 +18,7 @@ public class MultiMatch {
     //searchSourceBuilder.query(QueryBuilders.multiMatchQuery("b", "field").type("phrase_prefix"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
 
   }

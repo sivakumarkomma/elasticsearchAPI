@@ -19,8 +19,8 @@ public class ConstantScoreQuery {
     searchSourceBuilder.query(QueryBuilders.constantScoreQuery(QueryBuilders.idsQuery("document").addIds("192.168.87.199-mina-paperkey.exe")));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse.getHits().getTotalHits());
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
   }
 }

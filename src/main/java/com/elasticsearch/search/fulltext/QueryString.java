@@ -19,9 +19,9 @@ public class QueryString {
 
     searchSourceBuilder.query(QueryBuilders.queryStringQuery(queryString));
     searchRequest.source(searchSourceBuilder);
-    System.out.println("searchRequest  "+searchRequest);
+    System.out.println("searchRequest  " + searchRequest);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
   }
 }

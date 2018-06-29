@@ -17,7 +17,7 @@ public class MatchPhrasePrefixQuery {
     searchSourceBuilder.query(QueryBuilders.matchPhrasePrefixQuery("field", "b"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
   }
 }

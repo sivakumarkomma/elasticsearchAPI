@@ -17,8 +17,8 @@ public class DeleteAPI {
         "doc",
         "1");
     DeleteResponse deleteResponse = highLevelClient.delete(request);
-    System.out.println("deleteResponse    "+deleteResponse);
-    System.out.println("deleteResponse  "+deleteResponse.getId());
+    System.out.println("deleteResponse    " + deleteResponse);
+    System.out.println("deleteResponse  " + deleteResponse.getId());
     EsConnection.closeClient(highLevelClient);
   }
 }

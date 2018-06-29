@@ -22,7 +22,7 @@ public class IndexAPI {
     IndexRequest indexRequest = new IndexRequest("twitter", "doc", "1")
         .source(jsonMap);
     IndexResponse indexResponse = highLevelClient.index(indexRequest);
-    System.out.println("indexResponse  "+indexResponse.getId());
+    System.out.println("indexResponse  " + indexResponse.getId());
     EsConnection.closeClient(highLevelClient);
   }
 }

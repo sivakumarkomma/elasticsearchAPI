@@ -17,8 +17,8 @@ public class UpdateAPI {
         "doc",
         "1");
     UpdateResponse updateResponse = highLevelClient.update(request);
-    System.out.println("updateResponse    "+updateResponse);
-    System.out.println("updateResponse  "+updateResponse.getId());
+    System.out.println("updateResponse    " + updateResponse);
+    System.out.println("updateResponse  " + updateResponse.getId());
     EsConnection.closeClient(highLevelClient);
   }
 }

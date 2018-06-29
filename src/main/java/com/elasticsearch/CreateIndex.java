@@ -14,10 +14,10 @@ public class CreateIndex {
 
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
 
-    try{
+    try {
       CreateIndexRequest request = new CreateIndexRequest(INDEX_NAME);
       CreateIndexResponse createIndexResponse = highLevelClient.indices().create(request);
-    }catch(ElasticsearchStatusException ese) {
+    } catch (ElasticsearchStatusException ese) {
       ese.getMessage();
     } finally {
       EsConnection.closeClient(highLevelClient);

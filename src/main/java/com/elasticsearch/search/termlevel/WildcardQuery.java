@@ -16,10 +16,10 @@ public class WildcardQuery {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
     SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-    searchSourceBuilder.query(QueryBuilders.wildcardQuery("name","paper*exe"));
+    searchSourceBuilder.query(QueryBuilders.wildcardQuery("name", "paper*exe"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse.getHits().getTotalHits());
+    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
     EsConnection.closeClient(highLevelClient);
   }
 

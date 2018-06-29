@@ -7,8 +7,7 @@ import org.elasticsearch.client.RestHighLevelClient;
 
 public class EsConnection {
 
-  public static RestHighLevelClient loadClient()
-  {
+  public static RestHighLevelClient loadClient() {
     RestHighLevelClient client = new RestHighLevelClient(
         RestClient.builder(
             new HttpHost("localhost", 9200, "http"),
@@ -17,8 +16,7 @@ public class EsConnection {
     return client;
   }
 
-  public static void closeClient(RestHighLevelClient client) throws IOException
-  {
+  public static void closeClient(RestHighLevelClient client) throws IOException {
     client.close();
   }
 }

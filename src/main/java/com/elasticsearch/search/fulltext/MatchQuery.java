@@ -17,7 +17,7 @@ public class MatchQuery {
     searchSourceBuilder.query(QueryBuilders.matchQuery("field", "foo"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  "+searchResponse);
+    System.out.println("searchResponse  " + searchResponse);
     EsConnection.closeClient(highLevelClient);
   }
 }
