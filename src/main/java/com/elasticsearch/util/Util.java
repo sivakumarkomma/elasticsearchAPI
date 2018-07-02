@@ -16,4 +16,13 @@ public class Util {
       return path;
     }
   }
+
+  public static void main(String[] args) {
+    System.out.println(preparePathBasedID("C:\\Users\\siva\\git\\Java Documents"));
+    System.out.println(preparePathBasedID("C:\\Users\\siva\\git\\Java Documents1"));
+    System.out.println(preparePathBasedID("C:\\Users\\siva\\Documents\\Java Documents"));
+    System.out.println(preparePathBasedID("C:\\Users\\siva\\Documents\\Java Documents1"));
+    System.out.println(preparePathBasedID("C:\\Users\\siva\\Documents\\code\\Java Documents"));
+    System.out.println(preparePathBasedID("C:\\Users\\siva\\Documents\\code\\Java Documents1"));
+  }
 }

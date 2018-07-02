@@ -24,6 +24,7 @@ public class DocumentDto {
   private String sa_MetaData;
   private String vc_mimeType;
   private String vc_immediateParentPath;
+  private String parent_path_md5;
   private String vc_rootParentPath;
 
   public String getId() {
@@ -162,6 +163,14 @@ public class DocumentDto {
     this.vc_rootParentPath = vc_rootParentPath;
   }
 
+  public String getParent_path_md5() {
+    return parent_path_md5;
+  }
+
+  public void setParent_path_md5(String parent_path_md5) {
+    this.parent_path_md5 = parent_path_md5;
+  }
+
   public DocumentDto() {
   }
 
@@ -181,6 +190,7 @@ public class DocumentDto {
                      String sa_MetaData,
                      String vc_mimeType,
                      String vc_immediateParentPath,
+                     String parent_path_md5,
                      String vc_rootParentPath) {
     this.id = id;
     this.sa_indexID = sa_indexID;
@@ -198,6 +208,7 @@ public class DocumentDto {
     this.sa_MetaData = sa_MetaData;
     this.vc_mimeType = vc_mimeType;
     this.vc_immediateParentPath = vc_immediateParentPath;
+    this.parent_path_md5 = parent_path_md5;
     this.vc_rootParentPath = vc_rootParentPath;
   }
 }

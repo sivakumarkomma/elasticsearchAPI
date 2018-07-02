@@ -17,10 +17,10 @@ public class Cardinality {
     RestHighLevelClient highLevelClient = EsConnection.loadClient();
     SearchRequest searchRequest = new SearchRequest("twitter");
     SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-    searchSourceBuilder.aggregation(AggregationBuilders.cardinality("uni_sa_fileSize").field("sa_fileSize"));
+    searchSourceBuilder.aggregation(AggregationBuilders.cardinality("uni_sa_fileSize").field("vc_rootParentPath.keyword"));
     searchRequest.source(searchSourceBuilder);
     SearchResponse searchResponse = highLevelClient.search(searchRequest);
-
+    System.out.println("searchResponse  " +searchResponse);
     System.out.println("agg  " + searchResponse.getAggregations().get("uni_sa_fileSize").toString());
     System.out.println("agg  " + searchResponse.getAggregations().get("uni_sa_fileSize").getName());
     System.out.println("agg  " + searchResponse.getAggregations().get("uni_sa_fileSize").getType());
