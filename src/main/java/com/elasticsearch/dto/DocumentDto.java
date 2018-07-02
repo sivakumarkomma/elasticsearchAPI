@@ -26,6 +26,7 @@ public class DocumentDto {
   private String vc_immediateParentPath;
   private String parent_path_md5;
   private String vc_rootParentPath;
+  private String vc_file_extension;
 
   public String getId() {
     return id;
@@ -171,6 +172,14 @@ public class DocumentDto {
     this.parent_path_md5 = parent_path_md5;
   }
 
+  public String getVc_file_extension() {
+    return vc_file_extension;
+  }
+
+  public void setVc_file_extension(String vc_file_extension) {
+    this.vc_file_extension = vc_file_extension;
+  }
+
   public DocumentDto() {
   }
 
@@ -191,6 +200,7 @@ public class DocumentDto {
                      String vc_mimeType,
                      String vc_immediateParentPath,
                      String parent_path_md5,
+                     String vc_file_extension,
                      String vc_rootParentPath) {
     this.id = id;
     this.sa_indexID = sa_indexID;
@@ -210,5 +220,6 @@ public class DocumentDto {
     this.vc_immediateParentPath = vc_immediateParentPath;
     this.parent_path_md5 = parent_path_md5;
     this.vc_rootParentPath = vc_rootParentPath;
+    this.vc_file_extension = vc_file_extension;
   }
 }

@@ -1,9 +1,9 @@
 [
   {
-    "id": "C:\\Users\\siva\\git\\Java Documents\\ADMD_Java_Development_Standards.doc",
+    "id": "C:\\Users\\siva\\git\\Java Documents\\ADMD_Java_Development_Standards.pdf",
     "sa_indexID": "1",
     "url": "empty",
-    "name": "ADMD_Java_Development_Standards.doc",
+    "name": "ADMD_Java_Development_Standards.pdf",
     "sa_date_creation": "2016-12-16",
     "last_modified": "2017-12-17",
     "sa_last_access": "2018-01-18",
@@ -17,13 +17,14 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\git\\Java Documents",
     "parent_path_md5": "CD91C59E06378BF9702243D9B0F0B8D2D43910D8",
-    "vc_rootParentPath": "C:\\Users\\siva\\git"
+    "vc_rootParentPath": "C:\\Users\\siva\\git",
+    "vc_file_extension": ".pdf"
   },
   {
-    "id": "C:\\Users\\siva\\git\\Java Documents\\Ehcache_Configuration_Guide.doc",
+    "id": "C:\\Users\\siva\\git\\Java Documents\\Ehcache_Configuration_Guide.ppt",
     "sa_indexID": "1",
     "url": "empty",
-    "name": "Ehcache_Configuration_Guide.doc",
+    "name": "Ehcache_Configuration_Guide.ppt",
     "sa_date_creation": "2015-12-15",
     "last_modified": "2016-12-16",
     "sa_last_access": "2017-01-17",
@@ -37,13 +38,14 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\git\\Java Documents",
     "parent_path_md5": "CD91C59E06378BF9702243D9B0F0B8D2D43910D8",
-    "vc_rootParentPath": "C:\\Users\\siva\\git"
+    "vc_rootParentPath": "C:\\Users\\siva\\git",
+    "vc_file_extension": ".ppt"
   },
   {
-    "id": "C:\\Users\\siva\\git\\Java Documents1\\Ehcache_Configuration_Guide1.doc",
+    "id": "C:\\Users\\siva\\git\\Java Documents1\\Ehcache_Configuration_Guide1.gif",
     "sa_indexID": "1",
     "url": "empty",
-    "name": "Ehcache_Configuration_Guide.doc",
+    "name": "Ehcache_Configuration_Guide.gif",
     "sa_date_creation": "2014-12-14",
     "last_modified": "2015-12-15",
     "sa_last_access": "2016-01-16",
@@ -57,13 +59,14 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\git\\Java Documents1",
     "parent_path_md5": "139DF608DC04F3BFA2D792E54E5D198AB8677F45",
-    "vc_rootParentPath": "C:\\Users\\siva\\git"
+    "vc_rootParentPath": "C:\\Users\\siva\\git",
+    "vc_file_extension": ".gif"
   },
   {
-    "id": "C:\\Users\\siva\\git\\Java Documents1\\Ehcache_Configuration_Guide2.doc",
+    "id": "C:\\Users\\siva\\git\\Java Documents1\\Ehcache_Configuration_Guide2.jpeg",
     "sa_indexID": "1",
     "url": "empty",
-    "name": "Ehcache_Configuration_Guide.doc",
+    "name": "Ehcache_Configuration_Guide.jpeg",
     "sa_date_creation": "2013-12-13",
     "last_modified": "2014-12-14",
     "sa_last_access": "2018-01-18",
@@ -77,13 +80,14 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\git\\Java Documents1",
     "parent_path_md5": "139DF608DC04F3BFA2D792E54E5D198AB8677F45",
-    "vc_rootParentPath": "C:\\Users\\siva\\git"
+    "vc_rootParentPath": "C:\\Users\\siva\\git",
+    "vc_file_extension": ".jpeg"
   },
   {
-    "id": "C:\\Users\\siva\\Documents\\Java Documents\\GitStash-_Tutorial.ppt",
+    "id": "C:\\Users\\siva\\Documents\\Java Documents\\GitStash-_Tutorial-new.pdf",
     "sa_indexID": "2",
     "url": "empty",
-    "name": "GitStash-_Tutorial.ppt",
+    "name": "GitStash-_Tutorial-new.pdf",
     "sa_date_creation": "2012-12-12",
     "last_modified": "2013-12-13",
     "sa_last_access": "2016-01-16",
@@ -97,13 +101,14 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\Documents\\Java Documents",
     "parent_path_md5": "D6AB105208A089FFFDEE1651E7EF3BAA1985CEE",
-    "vc_rootParentPath": "C:\\Users\\siva\\Documents"
+    "vc_rootParentPath": "C:\\Users\\siva\\Documents",
+    "vc_file_extension": ".pdf"
   },
   {
-    "id": "C:\\Users\\siva\\Documents\\Java Documents\\print_certificate.htm",
+    "id": "C:\\Users\\siva\\Documents\\Java Documents\\print_certificate.doc",
     "sa_indexID": "2",
     "url": "empty",
-    "name": "print_certificate.htm",
+    "name": "print_certificate.doc",
     "sa_date_creation": "2013-12-13",
     "last_modified": "2014-12-14",
     "sa_last_access": "2015-01-15",
@@ -117,13 +122,14 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\Documents\\Java Documents",
     "parent_path_md5": "D6AB105208A089FFFDEE1651E7EF3BAA1985CEE",
-    "vc_rootParentPath": "C:\\Users\\siva\\Documents"
+    "vc_rootParentPath": "C:\\Users\\siva\\Documents",
+    "vc_file_extension": ".doc"
   },
   {
     "id": "C:\\Users\\siva\\Documents\\Java Documents1\\GitStash-_Tutorial1.ppt",
     "sa_indexID": "2",
     "url": "empty",
-    "name": "GitStash-_Tutorial.ppt",
+    "name": "GitStash-_Tutorial1.ppt",
     "sa_date_creation": "2014-12-14",
     "last_modified": "2015-12-15",
     "sa_last_access": "2016-01-16",
@@ -137,7 +143,8 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\Documents\\Java Documents1",
     "parent_path_md5": "1FC4338CF1626355C87F650AB7DD4062A01320C",
-    "vc_rootParentPath": "C:\\Users\\siva\\Documents"
+    "vc_rootParentPath": "C:\\Users\\siva\\Documents",
+    "vc_file_extension": ".ppt"
   },
   {
     "id": "C:\\Users\\siva\\Documents\\Java Documents1\\print_certificate.htm",
@@ -157,13 +164,14 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\Documents\\Java Documents1",
     "parent_path_md5": "1FC4338CF1626355C87F650AB7DD4062A01320C",
-    "vc_rootParentPath": "C:\\Users\\siva\\Documents"
+    "vc_rootParentPath": "C:\\Users\\siva\\Documents",
+    "vc_file_extension": ".htm"
   },
   {
-    "id": "C:\\Users\\siva\\Documents\\code\\Java Documents\\Technical_Operating_Procedure_User_Guide_CDS.docx",
+    "id": "C:\\Users\\siva\\Documents\\code\\Java Documents\\Technical_Operating_Procedure_User_Guide_CDS.doc",
     "sa_indexID": "3",
     "url": "empty",
-    "name": "Technical_Operating_Procedure_User_Guide_CDS.docx",
+    "name": "Technical_Operating_Procedure_User_Guide_CDS.doc",
     "sa_date_creation": "2016-12-16",
     "last_modified": "2017-12-17",
     "sa_last_access": "2018-01-18",
@@ -177,13 +185,14 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\Documents\\code\\Java Documents",
     "parent_path_md5": "73CFCCB25E7184774C1BB9493BA505E1BE3586F6",
-    "vc_rootParentPath": "C:\\Users\\siva\\Documents\\code"
+    "vc_rootParentPath": "C:\\Users\\siva\\Documents\\code",
+    "vc_file_extension": ".doc"
   },
   {
-    "id": "C:\\Users\\siva\\Documents\\code\\Java Documents\\Technical_Operating_User_Guide_CDS.docx",
+    "id": "C:\\Users\\siva\\Documents\\code\\Java Documents\\Technical_Operating_User_Guide_CDS.xls",
     "sa_indexID": "3",
     "url": "empty",
-    "name": "Technical_Operating_User_Guide_CDS.docx",
+    "name": "Technical_Operating_User_Guide_CDS.xls",
     "sa_date_creation": "2015-12-15",
     "last_modified": "2016-12-16",
     "sa_last_access": "2017-01-17",
@@ -197,13 +206,14 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\Documents\\code\\Java Documents",
     "parent_path_md5": "73CFCCB25E7184774C1BB9493BA505E1BE3586F6",
-    "vc_rootParentPath": "C:\\Users\\siva\\Documents\\code"
+    "vc_rootParentPath": "C:\\Users\\siva\\Documents\\code",
+    "vc_file_extension": ".xls"
   },
   {
-    "id": "C:\\Users\\siva\\Documents\\code\\Java Documents1\\Technical_Operating_Procedure_User_Guide_CDS1.docx",
+    "id": "C:\\Users\\siva\\Documents\\code\\Java Documents1\\Technical_Operating_Procedure_User_Guide_CDS1.pdf",
     "sa_indexID": "3",
     "url": "empty",
-    "name": "Technical_Operating_Procedure_User_Guide_CDS.docx",
+    "name": "Technical_Operating_Procedure_User_Guide_CDS.pdf",
     "sa_date_creation": "2014-12-14",
     "last_modified": "2015-12-15",
     "sa_last_access": "2016-01-16",
@@ -217,7 +227,8 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\Documents\\code\\Java Documents1",
     "parent_path_md5": "C3D3C30523E6A607F775ED314A8E2607CB5F75D0",
-    "vc_rootParentPath": "C:\\Users\\siva\\Documents\\code"
+    "vc_rootParentPath": "C:\\Users\\siva\\Documents\\code",
+    "vc_file_extension": ".pdf"
   },
   {
     "id": "C:\\Users\\siva\\Documents\\code\\Java Documents1\\Technical_Operating_User_Guide_CDS1.docx",
@@ -237,6 +248,7 @@
     "vc_mimeType": "application/octet-stream",
     "vc_immediateParentPath": "C:\\Users\\siva\\Documents\\code\\Java Documents1",
     "parent_path_md5": "C3D3C30523E6A607F775ED314A8E2607CB5F75D0",
-    "vc_rootParentPath": "C:\\Users\\siva\\Documents\\code"
+    "vc_rootParentPath": "C:\\Users\\siva\\Documents\\code",
+    "vc_file_extension": ".docx"
   }
 ]

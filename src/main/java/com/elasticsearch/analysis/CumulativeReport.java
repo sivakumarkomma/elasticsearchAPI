@@ -33,17 +33,6 @@ public class CumulativeReport {
     EsConnection.closeClient(highLevelClient);
   }
 
-  private static void withQueryString(String startDate, String endDate, RestHighLevelClient highLevelClient) throws IOException {
-    String initialQuery = "{\"_source\":{\"excludes\":[]},\"aggs\":{\"2\":{\"significant_terms\":{\"field\":\"VC_FILE_EXTENSION.keyword\",\"size\":10},\"aggs\":{\"3\":{\"date_histogram\":{\"field\":\"VC_MODIFIEDDATE\",\"interval\":\"1y\",\"time_zone\":\"Africa/Cairo\",\"min_doc_count\":1},\"aggs\":{\"1\":{\"sum\":{\"field\":\"VC_FILESIZE\"}}}}}}},\"stored_fields\":[\"*\"],\"script_fields\":{},\"docvalue_fields\":[\"VC_ACCESSEDON\",\"VC_ARCHIVEDATE\",\"VC_CREATIONDATE\",\"VC_MODIFIEDDATE\",\"VC_REPOACCESSEDON\"],\"query\":{\"bool\":{\"must\":[{\"match_all\":{}},{\"range\":{\"VC_MODIFIEDDATE\":{\"gte\":%s,\"lte\":%s,\"format\":\"epoch_millis\"}}}],\"filter\":[],\"should\":[],\"must_not\":[]}}}\r\n";
-    String finalQuery = String.format(initialQuery, startDate, endDate);
-    SearchRequest searchRequest = new SearchRequest("twitter");
-    SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-    searchSourceBuilder.query(QueryBuilders.queryStringQuery(finalQuery));
-    searchRequest.source(searchSourceBuilder);
-    SearchResponse searchResponse = highLevelClient.search(searchRequest);
-    System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
-  }
-
   private static void UsingQueryBuilder(String startDate, String endDate, RestHighLevelClient highLevelClient) throws IOException {
 
     SearchResponse searchResponse = highLevelClient.search(new SearchRequest("twitter")
@@ -52,20 +41,18 @@ public class CumulativeReport {
                 .dateHistogram("dateHistogram")
                 .field("sa_date_creation")
                 .dateHistogramInterval(DateHistogramInterval.YEAR)
-                .minDocCount(1))
-            .aggregation(AggregationBuilders
-                .sum("sum")
-                .field("sa_fileSize"))
+                .minDocCount(1).subAggregation(AggregationBuilders
+                    .sum("sum")
+                    .field("sa_fileSize")).subAggregation(AggregationBuilders.terms("group_by").field("vc_file_extension.keyword")
+                .subAggregation(AggregationBuilders.sum("sum").field("sa_fileSize"))))
             .query(QueryBuilders
                 .boolQuery()
                 .must(QueryBuilders.rangeQuery("sa_date_creation")
                 .gt(endDate)
                 .lt(startDate))
+                .must(QueryBuilders.matchPhrasePrefixQuery("vc_rootParentPath", "C:\\Users\\siva\\git"))
         )));
     System.out.println("searchResponse  " + searchResponse.getHits().getTotalHits());
     System.out.println("searchResponse  " + searchResponse);
-    ParsedSum parsedSum = searchResponse.getAggregations().get("sum");
-    System.out.println(" parsedAvg.getValue()  " + parsedSum.getValue());
-
   }
 }
